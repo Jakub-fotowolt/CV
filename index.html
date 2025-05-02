@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+			<img id="profile-pic" src="obrazek.jpg" alt="Obrazek" class="profile-pic">
+            <div class="description">
+                <h1 data-lang-pl="Jakub Wereszczyński" data-lang-en="Jakub Wereszczyński">Jakub Wereszczyński</h1>
+				<h2 data-lang-pl="Doświadczony Specjalista ETL i BI." data-lang-en="Experienced ETL and BI specialist.">Doświadczony Specjalista ETL i BI.</h2>
+                <p  class="custom-paragraph" id = "about-section" 
+				data-lang-en="
+					&nbsp;&nbsp;&nbsp;Proficient in delivering end-to-end solutions in data warehousing, analytics, and reporting using tools such as Informatica PowerCenter, Oracle, Power BI, Oracle APEX and Python.
+					&nbsp;&nbsp;&nbsp;A collaborative and adaptable professional, familiar with agile environments, including over two years of experience as a Product Owner and Kanban Leader, focusing on team performance and process optimization.
+					&nbsp;&nbsp;&nbsp;Curious by nature, opened to new knowledge and welcomes complex challenges with enthusiasm." 
+				data-lang-pl="
+					&nbsp;&nbsp;&nbsp;Specjalizuję się w tworzeniu i rozwijaniu kompleksowych rozwiązań w zakresie hurtowni danych, analityki i raportowania. Na co dzień pracuję z technologiami takimi jak Informatica PowerCenter, Oracle, Power BI, Oracle APEX oraz Python.
+					&nbsp;&nbsp;&nbsp;Posiadam ponad dwuletnie doświadczenie w roli Product Ownera oraz Lidera Kanban, gdzie koncentruję się na efektywności zespołu i optymalizacji procesów.
+					&nbsp;&nbsp;&nbsp;Charakteryzuje mnie analityczne podejście oraz chęć ciągłego rozwoju – chętnie podejmuję nowe wyzwania i dążę do wdrażania wartościowych, innowacyjnych rozwiązań."
+				>	&nbsp;&nbsp;&nbsp;Specjalizuję się w tworzeniu i rozwijaniu kompleksowych rozwiązań w zakresie hurtowni danych, analityki i raportowania. Na co dzień pracuję z technologiami takimi jak Informatica PowerCenter, Oracle, Power BI, Oracle APEX oraz Python.<br>
+					&nbsp;&nbsp;&nbsp;Posiadam ponad dwuletnie doświadczenie w roli Product Ownera oraz Lidera Kanban, gdzie koncentruję się na efektywności zespołu i optymalizacji procesów.<br>
+					&nbsp;&nbsp;&nbsp;Charakteryzuje mnie analityczne podejście oraz chęć ciągłego rozwoju – chętnie podejmuję nowe wyzwania i dążę do wdrażania wartościowych, innowacyjnych rozwiązań.
+				</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button data-lang-pl="Doświadczenie" data-lang-en="Experience" onclick="toggleSection('experience')">Doświadczenie</button>
+            <button data-lang-pl="Umiejętności" data-lang-en="Skills" onclick="toggleSection('skills')">Umiejętności</button>
+            <button data-lang-pl="Języki" data-lang-en="Languages" onclick="toggleSection('languages')">Języki</button>
+            <button data-lang-pl="Wykształcenie" data-lang-en="Education" onclick="toggleSection('education')">Wykształcenie</button>
+            <button data-lang-pl="Zainteresowania" data-lang-en="Interests" onclick="toggleSection('interests')">Zainteresowania</button>
+            <button data-lang-pl="Kontakt" data-lang-en="Contact" onclick="toggleSection('contact')">Kontakt</button>
+        </div>
+        <div id="experience" class="section">
+            <ul>
+                <strong><li data-lang-pl="2017-2021 Huawei - Project Manager" data-lang-en="2017-2021 Huawei - Project Manager">2017-2021 Huawei - Project Manager</li></strong>
+					<ul style="list-style-type: circle; margin-left: 5px;">
+						<li data-lang-pl="Zarządzanie zespołem projektowo - wykonawczym sieci teletechnicznych." data-lang-en="Project and execution team management for telecommunication infrastructure.">Zarządzanie zespołem projektowo - wykonawczym sieci teletechnicznych.</li>
+						<li class="no-marker"><br></li>
+					</ul>
+                <strong><li data-lang-pl="2021.10 – 2022.10  mBank - Specjalista IT - zespół raportowy" data-lang-en="2021.10 – 2022.10  mBank - Specjalista IT - reporting team">2021.10 – 2022.10  mBank - Specjalista IT - zespół raportowy</li></strong>
+                	<ul style="list-style-type: circle; margin-left: 5px;">
+						<li data-lang-pl="Przygotowywanie raportów w Oracle SQL i PL/SQL." data-lang-en="Project and execution team management for telecommunication infrastructure.">Przygotowywanie raportów w Oracle SQL i PL/SQL.</li>
+						<li data-lang-pl="Automatyzacja raportów – Informatica PowerCenter." data-lang-en="Project and execution team management for telecommunication infrastructure.">Automatyzacja raportów – Informatica PowerCenter.</li>
+						<li data-lang-pl="Rozwój i utrzymanie aplikacji wewnętrznej – Oracle Apex." data-lang-en="Project and execution team management for telecommunication infrastructure.">Rozwój i utrzymanie aplikacji wewnętrznej – Oracle Apex.</li>
+						<li data-lang-pl="WIzualizacja raportów Power BI." data-lang-en="Project and execution team management for telecommunication infrastructure.">WIzualizacja raportów Power BI.</li>
+						<li class="no-marker"><br></li>
+					</ul>
+				<strong><li data-lang-pl="2022.04 – Obecnie  mBank - Specjalista IT - Product Owner" data-lang-en="2022.04 – Currently  mBank - Specjalista IT - Product Owner">2022.04 – Obecnie  mBank - Specjalista IT - Product Owner</li></strong>
+					<ul style="list-style-type: circle; margin-left: 5px;">
+						<li data-lang-pl="Przygotowywanie i optymalizacja raportów biznesowych w Oracle SQL i PL/SQL." data-lang-en="Designing and optimizing business reports in Oracle SQL i PL/SQL.">Przygotowywanie i optymalizacja raportów biznesowych w Oracle SQL i PL/SQL.</li>
+						<li data-lang-pl="Projektowanie i optymalizacja procesów ETL w Informatica PowerCenter." data-lang-en="Building ETL processes using Informatica PowerCenter.">Projektowanie i optymalizacja procesów ETL w Informatica PowerCenter.</li>
+						<li data-lang-pl="Rozwój i utrzymanie aplikacji wewnętrznej – Oracle Apex." data-lang-en="Project and execution team management for telecommunication infrastructure.">Rozwój i utrzymanie aplikacji wewnętrznej – Oracle Apex.</li>
+						<li data-lang-pl="Wizualizacja raportów biznesowych w Power BI." data-lang-en="Designing and optimizing business reports in Power BI.">Wizualizacja raportów biznesowych w Power BI.</li>
+						<li class="no-marker"><br></li>
+					</ul>
+				
+				<strong><li data-lang-pl="2022.10 – Obecnie  mBank - Specjalista IT - Deweloper Hurtowni Danych" data-lang-en="2022.10 – Currently  mBank - Specjalista IT - Data Base Developer">2022.10 – Obecnie  mBank - Specjalista IT - Deweloper Hurtowni Danych</li></strong>
+					<ul style="list-style-type: circle; margin-left: 5px;">
+						<li data-lang-pl="Tworzenie nowych oraz rozbudowa istniejących struktur hurtowni danych zgodnie z wymaganiami biznesowymi." data-lang-en="Designing and extending data warehouse structures in line with business requirements.">Tworzenie nowych oraz rozbudowa istniejących struktur hurtowni danych zgodnie z wymaganiami biznesowymi.</li>
+						<li data-lang-pl="Projektowanie, implementacja i optymalizacja procesów ETL zasilających hurtownie." data-lang-en="Designing, implementing, and optimizing ETL workflows in Informatica PowerCenter and Oracle environments.">Projektowanie, implementacja i optymalizacja procesów ETL zasilających hurtownie.</li>
+						<li data-lang-pl="Analiza i rozwiązywanie problemów związanych z procesami zasilania hurtowni danych." data-lang-en="Analyzing and resolving issues related to data warehouse loading processes.">Analiza i rozwiązywanie problemów związanych z procesami zasilania hurtowni danych.</li>
+						<li data-lang-pl="Tworzenie i utrzymanie narzędzi wspierających rozwój hurtowni danych w języku Python." data-lang-en="Developing and maintaining tools supporting data warehouse development using Python.">Tworzenie i utrzymanie narzędzi wspierających rozwój hurtowni danych w języku Python.</li>
+						<li data-lang-pl="Utrzymanie oraz rozwój harmonogramowania zadań (AutomateNow)." data-lang-en="Maintaining and developing job scheduling systems (AutomateNow).">Utrzymanie oraz rozwój harmonogramowania zadań (AutomateNow).</li>
+						<li data-lang-pl="Udział w pracach przygotowawczych związanych z planowaną migracją do środowiska chmurowego (Snowflake)." data-lang-en="Supporting activities related to the planned migration to a cloud-based data platform (Snowflake).">Udział w pracach przygotowawczych związanych z planowaną migracją do środowiska chmurowego (Snowflake).</li>
+					
+					</ul>
+            </ul>
+        </div>
+        <div id="skills" class="section">
+            <ul>
+                <li data-lang-pl="Oracle SQL | PL/SQL" data-lang-en="Oracle SQL | PL/SQL"">Oracle SQL | PL/SQL"</li>
+                <li data-lang-pl="Informatica PowerCenter" data-lang-en="Informatica PowerCenter">Informatica PowerCenter</li>
+                <li data-lang-pl="Python" data-lang-en="Python">Python</li>
+				<li data-lang-pl="Oracle APEX" data-lang-en="Oracle APEX">Oracle APEX</li>
+				<li data-lang-pl="Power BI" data-lang-en="Power BI">Power BI</li>
+				<li data-lang-pl="GIT" data-lang-en="GIT">GIT</li>
+				<li data-lang-pl="AutomateNow, TeamCity, SonarQube, Artifactory" data-lang-en="AutomateNow, TeamCity, SonarQube, Artifactory">AutomateNow, TeamCity, SonarQube, Artifactory</li>
+				<li data-lang-pl="Snowflake" data-lang-en="Snowflake">Snowflake</li>
+            </ul>
+        </div>
+        <div id="languages" class="section">
+            <ul>
+                <li data-lang-pl="Angielski" data-lang-en="English">Angielski</li>
+                <li data-lang-pl="Hiszpański - poziom podstawowy (w trakcie nauki, z zamiłowania i chęci rozwoju)" data-lang-en="Spanish - basic (currently learning, driven by personal interest and development)">Hiszpański - poziom podstawowy (w trakcie nauki, z zamiłowania i chęci rozwoju)</li>
+            </ul>
+        </div>
+        <div id="education" class="section">
+            <ul>
+                <li data-lang-pl="2011-2015 – SGGW, inż. budownictwa." data-lang-en="2011-2015 - Warsaw University of Life Sciences, Bachelor of Science in Civil Engineering.">2011-2015 – SGGW, inż. budownictwa</li>
+                <li data-lang-pl="2016-2018 – Politechnika Lubelska, mgr inż. budownictwa." data-lang-en="2016-2018 - Lublin University of Technology Master of Science in Civil Engineering.">2016-2018 – Politechnika Lubelska, mgr inż. budownictwa.</li>
+            </ul>
+        </div>
+        <div id="interests" class="section">
+            <ul>
+                <li data-lang-pl="Zgłębianie technik Machine Learning oraz sztucznej inteligencji." data-lang-en="Learning and experimenting with AI and Machine Learning">Zgłębianie technik Machine Learning oraz sztucznej inteligencji.</li>
+                <li data-lang-pl="Programowanie w języku Python." data-lang-en="Developing skills in Python.">Programowanie w języku Python.</li>
+                <li data-lang-pl="Gra na perkusji, strzelectwo, nauka języka hiszpańskiego." data-lang-en="Playing the drums, sport shooting, learning Spanish.">Gra na perkusji, strzelectwo, nauka języka hiszpańskiego.</li>
+            </ul>
+        </div>
+        <div id="contact" class="section">
+            <ul>
+                <li data-lang-pl="Warszawa" data-lang-en="Warsaw">Warszawa</li>
+                <li data-lang-pl="mail: jakub.fotowolt@gmail.com" data-lang-en="mail: jakub.fotowolt@gmail.com">mail: jakub.fotowolt@gmail.com</li>
+                <li data-lang-pl="nr telefonu: 793 081 290" data-lang-en="phone number: 793 081 290">nr telefonu: 793 081 290</li>
+            </ul>
+        </div>
+        <div class="language-switch">
+            <button onclick="changeLanguage('pl')"><img src="poland-flag.png" alt="Polski" class="flag"></button>
+            <button onclick="changeLanguage('en')"><img src="uk-flag.png" alt="English" class="flag"></button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
